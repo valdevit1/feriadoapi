@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-const NavFilter = ({ feriados, setFeriadosCopia }) => {
+const NavFilter = ({ feriados, setFeriadosCopy }) => {
   const [input, setInput] = useState("");
 
   const handleChangeInput = (e) => {
     const value = e.target.value;
     setInput(value);
     const feriadosFiltrados = feriados.filter((f) => f.title.includes(value));
-    setFeriadosCopia(setFeriadosCopia);
+    setFeriadosCopy(FeriadosCopia);
   };
   const handleReset = (e) => {
-    setFeriadosCopia(feriados);
+    setFeriadosCopy(feriados);
     setInput("");
   };
   return (

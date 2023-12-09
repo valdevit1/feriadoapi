@@ -5,15 +5,15 @@ import "./App.css";
 
 function App() {
   const [feriados, setFeriados] = useState([]);
-  const [feriadosCopia, setFeriadosCopia] = useState([]);
+  const [feriadosCopy, setFeriadosCopy] = useState([]);
 
   return (
     <>
       <NavFilter feriados={feriados} setFeriadosCopia={setFeriadosCopia} />
       <MyApi
         setFeriados={setFeriados}
-        feriadosCopia={setFeriados}
-        setFeriadosCopia={setFeriadosCopia}
+        feriadosCopy={feriadosCopy}
+        setFeriadosCopy={setFeriadosCopy}
       />
     </>
   );

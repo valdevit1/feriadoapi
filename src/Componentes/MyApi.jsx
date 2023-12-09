@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-const MyApi = ({ setFeriados, feriadosCopia, setFeriadosCopia }) => {
+const MyApi = ({ setFeriados, feriadosCopy, setFeriadosCopia }) => {
   useEffect(() => {
     fetch("https://api.victorsanmartin.com/feriados/en.json")
       .then((data) => data.json())
       .then((f) => {
         setFeriados(f.data);
-        setFeriadosCopia(f.data);
+        setFeriadosCopy(f.data);
       });
   }, []);
 
