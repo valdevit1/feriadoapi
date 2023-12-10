@@ -2,21 +2,17 @@ import { useState, useEffect } from "react";
 
 const MyApi = ({ feriados, setFeriados }) => {
   useEffect(() => {
+    
     fetch("https://api.victorsanmartin.com/feriados/en.json")
-      .then((data) => data.json())
-      .then((f) => {
-        setFeriados(f.data);
-        setFeriadosCopy(f.data);
-      });
-  }, []);
+      .then(data =>{ return data.json()
+      })
+  ),[]}
 
   return (
     <div>
-      {feriados.map((f) => (
-        <p>{"${f.title} - ${f.date}"}</p>
-      ))}
+      MIAPI
     </div>
   );
-};
+
 
 export default MyApi;
