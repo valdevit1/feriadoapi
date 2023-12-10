@@ -8,11 +8,11 @@ const MyApi = ({ feriados, setFeriados }) => {
       })
   ),[]}
 
-  return (
+  return {
     <div>
       MIAPI
     </div>
-  );
+  }
 
 
 export default MyApi;
