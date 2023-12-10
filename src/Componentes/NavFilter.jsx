@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NavFilter = ({ feriados, setFeriadosCopy }) => {
+const NavFilter = ({ feriados, setFeriados }) => {
   const [input, setInput] = useState("");
 
   const handleChangeInput = (e) => {
