@@ -10,11 +10,7 @@ function App() {
   return (
     <>
       <NavFilter feriados={feriados} setFeriadosCopia={setFeriadosCopia} />
-      <MyApi
-        setFeriados={setFeriados}
-        feriadosCopy={feriadosCopy}
-        setFeriadosCopy={setFeriadosCopy}
-      />
+      <MyApi feriadoseriados={feriados} setFeriados={setFeriados} />
     </>
   );
 }
