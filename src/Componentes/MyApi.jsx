@@ -6,13 +6,13 @@ const MyApi = ({ feriados, setFeriados }) => {
     fetch("https://api.victorsanmartin.com/feriados/en.json")
       .then(data =>{ return data.json()
       })
-  ),[]}
+    },[])
 
-  return {
+  return (
     <div>
       MIAPI
     </div>
-  }
+  )
 
 
 export default MyApi;
