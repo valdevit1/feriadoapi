@@ -17,6 +17,8 @@ const NavFilter = ({ feriados, setFeriadosCopy }) => {
     <div>
       <input
         type="text"
+        name=""
+        id=""
         placeholder="Busca el feriado "
         onChange={handleChangeInput}
         value={input}
