@@ -11,6 +11,9 @@ function App() {
 
   return (
     <>
+      <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKlN1KOKrJpMG1ED3vfC9b4PETOaURwsBJA&usqp=CAU" />
+      </header>
       <h5>LISTA DE FERIADOS EN CHILE</h5>
       <NavFilter feriados={feriados} setFeriadosCopy={setFeriadosCopy} />
       <MyApi
@@ -18,6 +21,7 @@ function App() {
         feriadosCopy={feriadosCopy}
         setFeriadosCopy={setFeriadosCopy}
       />
+      <footer>FeriadosChile.cl</footer>
     </>
   );
 }
