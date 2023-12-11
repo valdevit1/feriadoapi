@@ -13,7 +13,10 @@ const MyApi = ({ setFeriados, feriadosCopy, setFeriadosCopy }) => {
   return (
     <div>
       {feriadosCopy.map((f) => (
-        <p key={f.title}>{`${f.title}-${f.date}`}</p>
+        <p key={f.title}>
+          {`${f.title}-${f.date}`}
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT2MnfLgWEju0ett4fmMUDTn28Bu_pCr5nvg&usqp=CAU" />
+        </p>
       ))}
     </div>
   );
