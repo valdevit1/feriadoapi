@@ -17,6 +17,7 @@ function App() {
       <h5>LISTA DE FERIADOS EN CHILE</h5>
       <NavFilter feriados={feriados} setFeriadosCopy={setFeriadosCopy} />
       <MyApi
+        feriados={feriados}
         setFeriados={setFeriados}
         feriadosCopy={feriadosCopy}
         setFeriadosCopy={setFeriadosCopy}

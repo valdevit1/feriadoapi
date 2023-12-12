@@ -6,7 +6,7 @@ const NavFilter = ({ feriados, setFeriadosCopy }) => {
   const handleChangeInput = (e) => {
     const value = e.target.value;
     setInput(value);
-    const feriadosFiltrados = feriados.filter((f) => f.title.include(value));
+    const feriadosFiltrados = feriados.filter((f) => f.title.includes(value));
     setFeriadosCopy(feriadosFiltrados);
   };
   const handleReset = (e) => {
@@ -23,7 +23,9 @@ const NavFilter = ({ feriados, setFeriadosCopy }) => {
         onChange={handleChangeInput}
         value={input}
       />
-      <button onClick={handleReset}>Reset Filter</button>
+      <button type="button" class="btn btn-primary" onClick={handleReset}>
+        Reset Filter
+      </button>
     </div>
   );
 };
